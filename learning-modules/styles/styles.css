@@ -7,3 +7,18 @@
     font-size: 1.5em;
     line-height: 1.5em;
 }
+img {
+    width: 80%;
+}
+p {
+    width: 80%;
+}
+a {
+    font-size: 1.5em;
+}
+<main>
+    <h1>Brigham Young University Idaho</h1>
+    <img src="https://web.byui.edu/policylibrary/assets/images/home.jpg">
+    <img src="https://web.byui.edu/policylibrary/assets/images/home.jpg">
+    <p>BYU-Idaho is a comfortable place to learn and grow as a disciple of Jesus Christ because students, faculty, and employees share a commitment to live the gospel.</p>
+</main>

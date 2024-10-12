@@ -1,0 +1,59 @@
+:root {
+    /* change the values below to your colors from your palette */
+  --primary-color: #000000   ;
+  --secondary-color: #ffffff ;
+
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: Arial, san-serif;
+  --paragraph-font: serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #ffffff;  /* headlines on a white background */ 
+
+  --nav-hover-link-color: #000000;
+
+}
+body {
+    max-width: 400px;
+    margin:  auto;
+    padding: 4em;
+    font-size: 20px;
+    text-align: center;
+    background-color: steelblue;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  h1 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+
+  }
+  h2 {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 13px;
+    color:var(--secondary-color)
+  }
+  h3 {
+    text-align: left;
+    font-family: var(--heading-font);
+    font-size: 14px;
+    color:var(--primary-color)
+  }
+  h4 {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 10px;
+    color:var(--primary-color)
+  }
+
+  p {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    padding: 2em;
+    font-size: 30px;
+  }
