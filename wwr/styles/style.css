@@ -1,11 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    background-color: #fcfbfb;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif, Georgia, 'Times New Roman', serif;
+}
+
 div {
     max-width: 1600px;
-    #background {
-        height: 725px;
-    }
-    
-
 }
+
 
 #content {
     margin: 0 auto;
@@ -14,96 +28,161 @@ div {
     left: auto;
     right: auto;
 }
+
 nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
+
 #hero-msg h1 {
     text-align: center;
 }
-#hero-msg h4{
+
+#hero-msg h4 {
     text-align: center;
 }
-.button-box{
+
+.button-box {
     text-align: center;
 }
+
 main section {
     text-align: center;
 }
-body {
-    background-color: #fcfbfb; 
+
+
+h2 {
+    margin: 0;
 }
+
 header {
-    background-color:rgba(39, 92, 1, 0.7);
+    background-color: rgba(39, 92, 1, 0.7);
 }
+
 nav a:hover {
     background-color: khaki;
     color: forestgreen;
     text-decoration: underline;
 }
+
 .book {
     background-color: rgb(255, 255, 255);
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
+
 .book:hover {
     background-color: white;
     color: forestgreen;
     text-decoration: underline;
 }
+
 #background {
     background-color: khaki;
+    height: 725px;
 }
+
 .msg {
     background-color: khaki;
+    padding: 35px;
+    line-height: 1.5em;
 }
+
 .join:hover {
     background-color: khaki;
     color: forestgreen;
     text-decoration: underline;
 }
+
 footer {
     background-color: white;
     color: black;
+    padding: 25px 50px;
 }
+
 .home-title {
     color: forestgreen;
+    font-size: 2em;
+    margin-top: 10px;
 }
+
 h4 {
     color: black;
 }
+
 .join {
     background-color: khaki;
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
+
 .msg h2 {
     color: forestgreen;
 }
+
 .msg p {
-    color:black;
+    color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
+
 footer a {
     color: black;
     text-decoration: none;
+    margin-top: 200px;
 }
+
 footer a:hover {
     color: forestgreen;
     text-decoration: underline;
 }
 
-    
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
-.logo{
+
+.logo {
     width: 80px;
 }
+
 #hero-img {
     width: 100%;
 }
- 
+
 footer p {
     font-size: 1.2em;
-}    
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
+}
+
+main section img {
+    box-sizing: border-box;
+}
