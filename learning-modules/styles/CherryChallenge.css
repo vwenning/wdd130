@@ -1,0 +1,36 @@
+.container {
+    display: flex;      /* Adjust height as needed */
+}
+.image-container{
+    position: relative;
+}
+img {
+    width: 600px;         /* Make the image responsive */
+    height: auto;        /* Maintain aspect ratio */
+}
+h1 {
+    position: absolute;
+    font-size: 200px;
+    z-index: 10;
+    padding: 0px;
+    top: 100px;
+    margin: 0;
+    left: 50px;
+}
+.color-block {
+    width: 600px;         /* Set the width of the color block */
+    height: 600px;        /* Set the height of the color block */
+    background-color:lightpink; /* Set the background color */
+    margin-left: 0px;    /* Space between the image and color block */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Center items horizontally */
+}
+.color-block h2 {
+    color: red;
+    font-size: 70px;
+    letter-spacing: 30px;
+    text-align: center;
+
+    
+}
