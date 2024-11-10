@@ -1,0 +1,233 @@
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Pacifico&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Delius', sans-serif;  /* Using Delius for body text */
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Pacifico', cursive;  /* Using Pacifico for all headings */
+}
+
+/* Header */
+header {
+    background-color: #3eb4af; /* Primary Color */
+    padding: 20px 0;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Sections */
+main {
+    padding: 40px 0;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.intro-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Why Choose Section */
+.why-choose {
+    background-color: #b8eaf9; /* Accent2 Color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.why-choose h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.why-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Featured Sections */
+.featured {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.featured-item {
+    width: 48%;
+    text-align: center;
+}
+
+.featured-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.featured-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3eb4af; /* Primary Color */
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #edb75f; /* Secondary Color */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+}
+
+/* Page-specific Styling for Meal Planning */
+.meal-planning {
+    text-align: center;
+    background-color: #edb75f; /* Secondary Color */
+    padding: 40px 0;
+}
+
+.meal-planning h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.meal-planning h3 {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.meal-planning p, .meal-planning ul {
+    font-size: 1rem;
+    color: white;
+}
+
+.meal-planning img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Page-specific Styling for Recipes */
+.recipes {
+    text-align: center;
+    background-color: #e151af; /* Accent1 Color */
+    padding: 40px 0;
+}
+
+.recipes h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.recipe-card {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h4 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.recipe-card .cta-btn {
+    background-color: #3eb4af; /* Primary Color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.recipe-card .cta-btn:hover {
+    background-color: #edb75f; /* Secondary Color */
+}
