@@ -205,7 +205,7 @@
   }
   
   .social-link {
-    font-size: 20px; /* Size of the icons */
+    font-size: 40px; /* Size of the icons */
     color: #000; /* Default color */
     text-decoration: none;
     transition: color 0.3s ease;
