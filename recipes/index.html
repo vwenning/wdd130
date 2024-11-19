@@ -4,93 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoria's Recipes</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <!-- Header Section -->
-    <header>
-        <div class="container">
-            <img src="images\Victoria’s.png" alt="Logo image">
-            <nav>
-                <ul>
+    <header class="header">
+        <div class="logo">
+            <img src="images/Victoria’s.png" alt="Website Logo" class="logo-img">
+        </div>
+        <div class="header-right">
+            <div class="header-right-top">
+                <div class="social-media">
+                    <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Find a recipe">
+                    <button>🔍</button>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="meal-planning.html">Meal Planning</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Victoria</a></li>
                     <li><a href="contact.html">Contact</a></li>
+        
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- Subscription Section -->
+    <section class="subscribe">
+        <p>Get the latest recipes to your inbox:</p>
+        <form>
+            <input type="email" placeholder="email address">
+            <button type="submit">Sign up</button>
+        </form>
+    </section>
 
-    <!-- Main Section -->
-    <main>
-        <section class="intro">
-            <div class="container">
-                <h2>Welcome to Victoria's Recipes!</h2>
-                <p>If you're looking for quick, healthy meal ideas that fit into your busy life, you're in the right place. Whether you're planning meals for the week, prepping ahead, or just looking for something delicious to cook tonight, we’ve got you covered with easy-to-follow recipes and practical tips.</p>
-                <img src="images/healthy-meal.jpg" alt="Healthy meal" class="intro-img">
+    <!-- Thanksgiving Recipes Section -->
+    <section class="recipes-section">
+        <h2>Thanksgiving Recipes</h2>        
+        <div class="recipes">
+            <div class="recipe-card">
+                <div class="recipe-image"><img src="images/cranberry.jpg" alt="Cranberry" class="recipe-image"></div>
+                <p class="recipe-name">Cranberry Sauce</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
             </div>
-        </section>
-
-        <!-- Why Choose Section -->
-        <section class="why-choose">
-            <div class="container">
-                <h3>Why Choose Victoria's Recipes?</h3>
-                <p>Our goal is to make healthy eating simple and stress-free. Whether you're a beginner cook or a busy parent, our recipes are designed to help you enjoy cooking without spending hours in the kitchen. We focus on fresh ingredients, easy steps, and meals that your whole family will love.</p>
-                <img src="images/family-meal.jpg" alt="Family enjoying meal" class="why-img">
+            <div class="recipe-card">
+                <div class="recipe-image"><img src="images/mashed-long.jpg" alt="Mashed" class="recipe-image"></div>
+                <p class="recipe-name">Mashed Potatoes</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
             </div>
-        </section>
-
-        <!-- Featured Sections -->
-        <section class="featured">
-            <div class="container">
-                <div class="featured-item">
-                    <h3>Meal Planning</h3>
-                    <p>Struggling to plan your meals? Let us help you take the guesswork out of meal prep! Check out our easy meal planning resources and templates to get organized and eat healthier.</p>
-                    <a href="meal-planning.html" class="cta-btn">Start Meal Planning</a>
-                    <img src="images/meal-planning.jpg" alt="Meal Planning" class="featured-img">
-                </div>
-
-                <div class="featured-item">
-                    <h3>Healthy Recipes</h3>
-                    <p>Looking for tasty and easy recipes? Explore our collection of healthy dishes, from quick dinners to healthy snacks and meal prep ideas.</p>
-                    <a href="recipes.html" class="cta-btn">Browse Recipes</a>
-                    <img src="images/healthy-recipe.jpg" alt="Healthy Recipe" class="featured-img">
-                </div>
+            <div class="recipe-card">
+                <div class="recipe-image"><img src="images/eggs-long.jpg" alt="Eggs" class="recipe-image"></div>
+                <p class="recipe-name">Deviled Eggs</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Call to Action Section -->
-        <section class="cta">
-            <div class="container">
-                <h2>Ready to get started?</h2>
-                <p>Find your next meal, plan your week, and enjoy cooking with Victoria’s Recipes!</p>
-                <a href="recipes.html" class="cta-btn">Explore Recipes Now</a>
-            </div>
-        </section>
-    </main>
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-image"><img src="images/chef.jpg" alt="Chef Victoria" class="about-image"></div>
+        <div class="about-text">
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="meal-planning.html">Meal Planning</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="https://instagram.com" target="_blank">Instagram</a> |
-                <a href="https://pinterest.com" target="_blank">Pinterest</a> |
-                <a href="https://facebook.com" target="_blank">Facebook</a>
+            <h2>Hello, I'm Victoria!</h2>
+            <p>
+                Join me on a culinary journey as we take fresh, simple ingredients and turn them into refined, elegant
+                dishes that any home cook can master.
+            </p>
+            <!-- Make the button a link -->
+            <a href="about.html" class="more-about-btn">More about Victoria</a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="social-media">
+                <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
             </div>
-            <p>&copy; 2024 Victoria’s Recipes</p>
         </div>
     </footer>
-
 </body>
+
 </html>

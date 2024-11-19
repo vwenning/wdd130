@@ -1,233 +1,247 @@
-/* Include Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Delius&family=Pacifico&display=swap');
-
-/* General Styles */
-body {
-    font-family: 'Delius', sans-serif;  /* Using Delius for body text */
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Pacifico', cursive;  /* Using Pacifico for all headings */
-}
-
-/* Header */
-header {
-    background-color: #3eb4af; /* Primary Color */
-    padding: 20px 0;
-    color: white;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-nav ul {
-    text-align: center;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Main Sections */
-main {
-    padding: 40px 0;
-}
-
-/* Intro Section */
-.intro {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.intro h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.intro p {
-    font-size: 1rem;
-    margin: 20px 0;
-}
-
-.intro-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Why Choose Section */
-.why-choose {
-    background-color: #b8eaf9; /* Accent2 Color */
-    padding: 40px 0;
-    text-align: center;
-}
-
-.why-choose h3 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.why-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* Featured Sections */
-.featured {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 1rem;
+    background-color: white;
+  }
+  .header-right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px; /* Space between social media and search bar */
+    /*margin-left: auto; /* Align everything to the right */
+  }
+  .header-right-top {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5em;
 }
-
-.featured-item {
-    width: 48%;
-    text-align: center;
-}
-
-.featured-item h3 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.featured-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-.cta-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3eb4af; /* Primary Color */
-    color: white;
+  
+  .logo img, .logo-img {
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Set a fixed height */
+    object-fit: contain; /* Ensures the image scales nicely */
+    display: block; /* Ensures it aligns properly */
+    margin: 0 auto; /* Centers it in its container */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    width: 100%; /* Ensure it spans the entire width of the container */
+    margin-top: 10px; /* Add some space below the search bar */
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between; /* Distribute the links evenly */
+    width: 100%; /* Make the nav links take up the full width */
+    padding: 0;
+    list-style-type: none; /* Remove default list styling */
+  }
+  
+  .nav-links li {
+    flex: 1; /* Each link will take up equal space */
+    text-align: center; /* Center the text inside each list item */
+  }
+  
+  .nav-links a {
     text-decoration: none;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-.cta-btn:hover {
-    background-color: #edb75f; /* Secondary Color */
-}
-
-/* Footer */
-footer {
+    color: #333;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    color: white; /* Highlight link on hover */
+  }
+  .nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem;
+    border: none;
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .subscribe {
+    padding: 1rem;
     text-align: center;
-}
-
-footer ul {
-    margin-bottom: 10px;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-footer ul li a {
     color: white;
-    text-decoration: none;
-}
-
-footer .social-links a {
-    color: white;
-    margin: 0 10px;
-}
-
-/* Page-specific Styling for Meal Planning */
-.meal-planning {
-    text-align: center;
-    background-color: #edb75f; /* Secondary Color */
-    padding: 40px 0;
-}
-
-.meal-planning h2 {
-    font-size: 2rem;
-    color: white;
-}
-
-.meal-planning h3 {
-    font-size: 1.75rem;
-    color: #333;
-}
-
-.meal-planning p, .meal-planning ul {
-    font-size: 1rem;
-    color: white;
-}
-
-.meal-planning img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* Page-specific Styling for Recipes */
-.recipes {
-    text-align: center;
-    background-color: #e151af; /* Accent1 Color */
-    padding: 40px 0;
-}
-
-.recipes h2 {
-    font-size: 2rem;
-    color: white;
-}
-
-.recipe-card {
-    display: inline-block;
-    width: 30%;
-    margin: 15px;
-    text-align: center;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.recipe-card h4 {
-    font-size: 1.25rem;
-    color: #333;
-}
-
-.recipe-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-.recipe-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.recipe-card .cta-btn {
-    background-color: #3eb4af; /* Primary Color */
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+    background-color: #000;
+  }
+  
+  .subscribe input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-top: 10px;
-}
+    margin-right: 0.5rem;
+  }
+  
+  .subscribe button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .recipes-section {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .recipes {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+  
+  .recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 30%;
+  }
+  
+  .recipe-image {
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  .rating {
+    color: #ff9900;
+  }
+  
+  .about {
+    display: flex;
+    padding: 2rem;
+    background-color: #f8f8f8;
+  }
+  
+  .about-image {
+    flex: 0;
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  .about-text {
+    flex: 2;
+  }
+  .about-page-text {
+    text-align: center;
+  }
+  
+  .more-about-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .more-about-btn:hover {
+    background-color: #555; /* Change color on hover */
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+    
+    
+  }
+  
+  .footer a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: white;
+    
+  }
 
-.recipe-card .cta-btn:hover {
-    background-color: #edb75f; /* Secondary Color */
-}
+  .social-media {
+    display: flex;
+    gap: 10px; /* Space between icons */
+  }
+  
+  .social-link {
+    font-size: 20px; /* Size of the icons */
+    color: #000; /* Default color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #555; /* Color on hover */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    .recipes {
+      flex-direction: column;
+      align-items: center;
+    }
+    .recipe-card {
+      width: 80%; /* Adjust width for smaller screens */
+      margin-bottom: 1rem;
+    }
+  }
