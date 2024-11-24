@@ -300,15 +300,107 @@
     color: #555; /* Color on hover */
   }
 
+  .easy-meal-prep {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .easy-meal-prep .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .what-is-meal-prep,
+  .meal-prep-tips {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
 
 
+  .downloads {
+    text-align: center;
+  }
+  
+  .download-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .download-boxes .box {
+    text-align: center;
+  }
 
+  #meal-planning-tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  #meal-planning-tips li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .download-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #000;
+  }
 
+  #what-is-meal-prep {
+    margin: 40px 0;
+    padding: 20px;;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  #what-is-meal-prep h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  #what-is-meal-prep h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+  
+  #what-is-meal-prep ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  #what-is-meal-prep ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  #what-is-meal-prep p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+  .meal-prep-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 
-
-
-
-
+.meal-prep-grid .image-box {
+  height: 200px;
+  background-color: #ddd;
+}
 
 
 
@@ -328,5 +420,17 @@
     .recipe-card {
       width: 80%; /* Adjust width for smaller screens */
       margin-bottom: 1rem;
+    }
+    .content {
+        flex-direction: column;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
     }
   }

@@ -1,69 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Planning - Victoria's Recipes</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Meal Planning</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1><a href="index.html" class="logo">Victoria's Recipes</a></h1>
-            <nav>
-                <ul>
+    <header class="header">
+        <div class="logo">
+            <img src="images/Victoria’s.png" alt="Website Logo" class="logo-img">
+        </div>
+        <div class="header-right">
+            <div class="header-right-top">
+                <div class="social-media">
+                    <a href="https://instagram.com" target="_blank" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="social-link"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Find a recipe">
+                    <button>🔍</button>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="meal-planning.html">Meal Planning</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Victoria</a></li>
                     <li><a href="contact.html">Contact</a></li>
+
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- Subscription Section -->
+    <section class="subscribe">
+        <p>Get the latest recipes to your inbox:</p>
+        <form>
+            <input type="email" placeholder="email address">
+            <button type="submit">Sign up</button>
+        </form>
+    </section>
 
     <!-- Main Section -->
+    <!-- Main Content -->
     <main>
-        <section class="meal-planning">
+        <!-- Meal Planning Introduction -->
+        <section class="intro">
             <div class="container">
-                <h2>Meal Planning Made Easy</h2>
-                <p>Meal planning can save you time and money, while helping you stay on track with your health goals. Let us help you organize your meals for the week with easy-to-follow templates and tips.</p>
+                <h1>Meal Planning Made Easy</h1>
+                <p>Take control of your kitchen and save time with our meal planning tips and resources. Whether you're a busy professional, a parent juggling family meals, or someone looking to eat healthier, our meal planning tools are here to help.</p>
+            </div>
+        </section>
 
-                <h3>How to Get Started</h3>
-                <p>Start by thinking about what meals your family enjoys. Then, plan for a mix of simple, healthy dishes that can be cooked in advance. Below are some tips to get you started:</p>
+        <!-- Easy Meal Prep -->
+        <section class="easy-meal-prep">
+            <div class="container">
+                <h2>Easy Meal Prep</h2>
+                <div class="meal-prep-grid">
+                    <div class="image-box" aria-label="Image placeholder"><img src="images/Meal-Prep-Image.jpg" alt="Meal Prep" class="image-box"></div>
+                    <div class="image-box" aria-label="Image placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is Meal Prep -->
+        <section id="what-is-meal-prep">
+            <div class="container">
+                <h2>What is Meal Prep?</h2>
+                <p>Meal prep, short for "meal preparation," is the process of planning, preparing, and portioning meals in advance to save time, reduce stress, and promote healthier eating habits. It’s a popular strategy for busy individuals, families, or anyone looking to simplify their weekly cooking routine.</p>
                 <ul>
-                    <li><strong>Plan for 5-7 meals per week:</strong> Include breakfast, lunch, dinner, and snacks.</li>
-                    <li><strong>Shop smart:</strong> Create a shopping list based on your meal plan.</li>
-                    <li><strong>Prep ahead:</strong> Prep ingredients or cook in batches to save time later in the week.</li>
+                    <li><strong>Batch Cooking:</strong> Prepare large portions and store them for the week.</li>
+                    <li><strong>Ingredient Prep:</strong> Ready-to-use chopped or prepped ingredients.</li>
+                    <li><strong>Portion Control:</strong> Individual meal servings for easy grab-and-go meals.</li>
+                    <li><strong>Custom Meal Kits:</strong> Pre-assembled recipe components for easy cooking.</li>
                 </ul>
+            </div>
+        </section>
 
-                <h3>Meal Planning Template</h3>
-                <p>Download our free meal planning template to make it even easier to stay on track. Print it out and fill it in each week!</p>
-                <a href="meal-planning-template.pdf" class="cta-btn" download>Download Template</a>
+        <!-- Meal Planning Tips -->
+        <section id="meal-planning-tips">
+            <div class="container">
+                <h2>Meal Planning Tips</h2>
+                <ul>
+                    <li>Plan meals around your weekly schedule.</li>
+                    <li>Shop smart and reduce waste with shared ingredients.</li>
+                    <li>Prep ahead to save time during the week.</li>
+                    <li>Incorporate "leftover days" to minimize waste.</li>
+                    <li>Use our downloadable meal planning template to get started!</li>
+                </ul>
+            </div>
+        </section>
 
-                <img src="images/meal-planning.jpg" alt="Meal planning" class="meal-planning-img">
+        <!-- Meal Planning Template -->
+        <section class="template-download">
+            <div class="container">
+                <h2>Downloadable Template</h2>
+                <p>Download our free meal planning template to streamline your weekly meal prep process.</p>
+                <a href="images\weekly-meal-planner.pdf" download class="download-btn">Download Template</a>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="meal-planning.html">Meal Planning</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="https://instagram.com" target="_blank">Instagram</a> |
-                <a href="https://pinterest.com" target="_blank">Pinterest</a> |
-                <a href="https://facebook.com" target="_blank">Facebook</a>
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="social-media">
+                <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="site-plan.html" target="_blank" class="social-link"><i class="fa-solid fa-sitemap"></i></a>
             </div>
-            <p>&copy; 2024 Victoria’s Recipes</p>
+            <div class="site-plan">
+
+            </div>
         </div>
     </footer>
 
