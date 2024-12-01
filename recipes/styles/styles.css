@@ -231,17 +231,121 @@
     color: white;
     background-color: #000;
   }
+  .recipesearchblock {
+    display: flex;
+    justify-content: center; /* Centers the block horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: left; /* Ensures text aligns to the left */
+    padding: 20px; /* Adds spacing around the block */
+    gap: 50px;
+    padding: 1rem;
+    color: white;
+    background-color: #000;
+  }
+  .recipe-search-bar {
+    justify-content: left;
+    gap: 1px;
+    margin-left: 50px;
+  }
+  .recipesubscribe {
+    justify-content: left;
+    gap: 20px;
+    padding: 1rem;
+    text-align: left;
+    color: white;
+    background-color: #000;
+  }
+  
+  .recipesubscribe input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+  }
+  
+  .recipesubscribe button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .category button {
+    justify-content: center;
+    padding: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+  }
+  .category-img {
+      width: 40px; /* Ensures the image scales with its container */
+      height: auto; /* Maintains the aspect ratio */
+      object-fit: cover; /* Ensures the image fills its container while keeping the aspect ratio */
+      border-radius: 10px; /* Optional: adds rounded corners */
+  }
+  .recipe-search-bar {
+    display: inline-block; /* Ensures the search bar stays inline */
+    vertical-align: middle;
+    margin-right: 20px; /* Adds spacing between the search bar and the category buttons */
+}
+
+.recipe-search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.recipe-search-bar button {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category {
+    display: inline-block; /* Keeps the category section inline with the search bar */
+    vertical-align: middle; /* Aligns it with the search bar */
+    text-align: center;
+}
+
+.category button {
+    display: inline-block; /* Makes each button inline within the category section */
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0 10px; /* Adds spacing between buttons */
+    text-align: center;
+}
+
+.category-img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: block;
+    margin: 0 auto; /* Centers the image in the button */
+}
+
+.category button span {
+    display: block; /* Ensures text stays below the image */
+    font-size: 14px;
+}
+  
 
   .about {
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #f8f8f8;
   }
   
   .about-image {
     flex: 0;
     height: 200px;
-    margin-right: 10px;
+    margin-left: 20%;
+    border-radius: 10px;
   }
   
   .about-text {
@@ -249,6 +353,7 @@
   }
   .about-page-text {
     text-align: center;
+    padding: 10px;
   }
   
   .more-about-btn {
@@ -262,6 +367,7 @@
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 10px;
   }
   
   .more-about-btn:hover {
@@ -273,8 +379,6 @@
     padding: 1rem;
     background-color: #000;
     color: white;
-    
-    
   }
   
   .footer a {
@@ -285,8 +389,7 @@
   }
 
   .social-media {
-    display: flex;
-    gap: 10px; /* Space between icons */
+
   }
   
   .social-link {
