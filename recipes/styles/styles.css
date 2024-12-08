@@ -1,23 +1,24 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  html {
-    font-size: clamp(14px, 1.6vw, 18px); /* Adjust base font size for all elements */
-  }
-  
-  <uniquifier>: body-font;
-  <weight>: 400;
-  
-  .roboto-condensed-<uniquifier> {
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
+html {
+  font-size: clamp(14px, 1.6vw, 18px);
+  /* Adjust base font size for all elements */
+}
+
+<uniquifier>: body-font;
+<weight>: 400;
+
+.roboto-condensed-<uniquifier> {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 <uniquifier>: header-font;
 <weight>: 500;
@@ -32,8 +33,8 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: white  ;
-  --secondary-color: black ;
+  --primary-color: white;
+  --secondary-color: black;
   --accent1-color: #505050;
   --accent2-color: #003b2b;
 
@@ -42,11 +43,15 @@
   --paragraph-font: "Roboto Condensed", Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #000;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #000; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #000 ;
+  --headline-color-on-white: #000;
+  /* headlines on a white background */
+  --headline-color-on-color: white;
+  /* headlines on a colored background */
+  --paragraph-color-on-white: #000;
+  /* paragraph text on a white background */
+  --paragraph-color-on-color: white;
+  /* paragraph text on a colored background */
+  --paragraph-background-color: #000;
   --nav-link-color: #000;
   --nav-background-color: white;
   --nav-hover-link-color: #b8eaf9;
@@ -58,7 +63,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--header-font, "Montserrat", sans-serif);
 }
 
@@ -67,138 +77,176 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--background-color);
 }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
   outline: 2px dashed var(--primary-color);
   outline-offset: 2px;
 }
 
-  header {
-    display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    padding: 1rem;
-    background-color: white;
-  }
-  .header-right {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 20px; /* Space between social media and search bar */
-    /*margin-left: auto; /* Align everything to the right */
-  }
-  .header-right-top {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5em;
+header {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 1rem;
+  background-color: white;
 }
-  
-  .logo img, .logo-img {
-    width: 200px; /* Set a fixed width */
-    height: auto; /* Set a fixed height */
-    object-fit: contain; /* Ensures the image scales nicely */
-    display: block; /* Ensures it aligns properly */
-    margin: 0 auto; /* Centers it in its container */
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    width: 100%; /* Ensure it spans the entire width of the container */
-    margin-top: 10px; /* Add some space below the search bar */
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content: space-between; /* Distribute the links evenly */
-    width: 100%; /* Make the nav links take up the full width */
-    padding: 0;
-    list-style-type: none; /* Remove default list styling */
-  }
-  
-  .nav-links li {
-    flex: 1; /* Each link will take up equal space */
-    text-align: center; /* Center the text inside each list item */
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s ease;
-  }
-  
-    .nav-links a:hover {
-      background-color: var(--nav-hover-background-color);
-      color: var(--headline-color-on-color);
-  }
-  .nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .search-bar {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .search-bar input {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  .search-bar button {
-    padding: 0.5rem;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 0 5px 5px 0;
-  }
-  
-  .subscribe {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 1rem;
-    text-align: center;
-    color: white;
-    background-color: #000;
-  }
-  
-  .subscribe input {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-right: 0.5rem;
-  }
-  
-  .subscribe button {
-    padding: 0.5rem;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
-    text-align: center;
-    height: 300px; /* Adjust the height to fit your container */
+
+.header-right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  /* Space between social media and search bar */
+  /*margin-left: auto; /* Align everything to the right */
 }
+
+.header-right-top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5em;
+}
+
+.logo img,
+.logo-img {
+  width: 200px;
+  /* Set a fixed width */
+  height: auto;
+  /* Set a fixed height */
+  object-fit: contain;
+  /* Ensures the image scales nicely */
+  display: block;
+  /* Ensures it aligns properly */
+  margin: 0 auto;
+  /* Centers it in its container */
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  /* Align items to the left */
+  width: 100%;
+  /* Ensure it spans the entire width of the container */
+  margin-top: 10px;
+  /* Add some space below the search bar */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  /* Distribute the links evenly */
+  width: 100%;
+  /* Make the nav links take up the full width */
+  padding: 0;
+  list-style-type: none;
+  /* Remove default list styling */
+}
+
+.nav-links li {
+  flex: 1;
+  /* Each link will take up equal space */
+  text-align: center;
+  /* Center the text inside each list item */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--headline-color-on-color);
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.search-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 0.5rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background-color: #000;
+}
+
+.subscribe input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.subscribe button {
+  padding: 0.5rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centers content horizontally */
+  justify-content: center;
+  /* Centers content vertically */
+  text-align: center;
+  height: 300px;
+  /* Adjust the height to fit your container */
+}
+
 .left-align {
-    text-align: left;
-    /* max-width: 700px; Optional: keeps it looking tidy */
+  text-align: left;
+  /* max-width: 700px; Optional: keeps it looking tidy */
 }
+
+.recipe-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centers content horizontally */
+  justify-content: center;
+  /* Centers content vertically */
+  text-align: center;
+  height: 100px;
+  /* Adjust the height to fit your container */
+  margin-top: 60px;
+}
+
+
 .recipes-section h2 {
   text-align: center;
   position: relative;
   font-size: 24px; /* Adjust font size as needed */
-  margin: 20px 0; /* Adds space around the heading */
 }
 
 .recipes-section h2:before,
@@ -206,362 +254,506 @@ a:focus, button:focus {
   content: "";
   position: absolute;
   top: 50%;
-  width: 34%; /* Adjust line width */
+  width: 40%; /* Adjust line width */
   height: 3px;
   background-color: #000; /* Adjust color */
 }
 
 .recipes-section h2:before {
   left: 0;
-  margin-right: 10px; /* Space between text and line */
+  margin-right: 10px;
+  /* Space between text and line */
 }
 
 .recipes-section h2:after {
   right: 0;
-  margin-left: 10px; /* Space between text and line */
-}  
+  margin-left: 10px;
+  /* Space between text and line */
+}
+
 .recipes-section {
-    padding: 2rem;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .recipes {
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-top: 5rem;
-  }
-  
-  .recipe-image img {
-    width: 100%; /* Ensures the image scales with its container */
-    height: auto; /* Maintains the aspect ratio */
-    object-fit: cover; /* Ensures the image fills its container while keeping the aspect ratio */
-    border-radius: 10px; /* Optional: adds rounded corners */
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.recipe-image img {
+  width: 100%;
+  /* Ensures the image scales with its container */
+  height: auto;
+  /* Maintains the aspect ratio */
+  object-fit: cover;
+  /* Ensures the image fills its container while keeping the aspect ratio */
+  border-radius: 10px;
+  /* Optional: adds rounded corners */
 }
 
 .recipe-card {
-    max-width: 200px; /* Limits the width of each card */
-    margin: 0 auto; /* Centers the card horizontally */
-    text-align: center;
+  max-width: 200px;
+  /* Limits the width of each card */
+  margin: 0 auto;
+  /* Centers the card horizontally */
+  text-align: center;
 }
-  
-  .rating {
-    color: #ff9900;
-  }
-  .recipes-overview {
-    padding: 2rem;
+
+.rating {
+  color: #ff9900;
+}
+
+.recipes-overview {
+  padding: 2rem;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 1rem;
-    flex: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns */
+  gap: 1rem;
+  flex: 3;
+}
+/* Sidebar styles */
+.sidebar {
+  width: 25%; /* Adjust the sidebar width as needed */
+  padding: 20px;
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px; /* Adjust based on your layout */
 }
 
-.sidebar {
-    flex: 1;
-    display:block ;
-    text-align: center;
-    gap: 2rem;
+.sidebar-about {
+  position: sticky;
+  top: 0; /* Makes the sidebar fixed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center horizontally */
+  justify-content: center; /* Vertically center the content */
+  text-align: center; /* Center the text inside the text container */
 }
+
+.sidebar-about-image {
+  justify-content: center;
+  width: 100%;
+  max-width: 250px; /* Ensure the image doesn't get too large */
+  height: auto;  /* Maintain aspect ratio of image */
+  margin-bottom: 20px; /* Space between image and text */
+  margin-right: 25%;
+}
+
+.sidebar-about-text {
+  justify-content: center;
+  width: 100%;   /* Take up full width */
+  max-width: 300px; /* Limit width of text container */
+}
+
+.sidebar-about-text h3 {
+  justify-content: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.sidebar-about-text p {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-container {
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+
+}
+
+.sidebar-subscribe {
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  margin-top: 50px;
+  align-items: center; 
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background-color: #000;
+}
+.sidebar-subscribe input {
+  align-items: center; 
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  width: 100%; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+.sidebar-subscribe input {
+  align-items: center; 
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.sidebar-subscribe button {
+  align-self: center; /* Center the button horizontally within the flex container */
+  margin-top: 10px;
+  padding: 0.5rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+
+
+
+
+
 
 .about,
 .subscribe-box {
-    background-color: #f8f8f8;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #white;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .about h3 {
-    margin-bottom: 1rem;
-}
-  .searchblock {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 1rem;
-    text-align: center;
-    color: white;
-    background-color: #000;
-  }
-  .recipesearchblock {
-    display: flex;
-    justify-content: center; /* Centers the block horizontally */
-    align-items: center; /* Centers the content vertically */
-    text-align: left; /* Ensures text aligns to the left */
-    padding: 20px; /* Adds spacing around the block */
-    gap: 50px;
-    padding: 1rem;
-    color: white;
-    background-color: #000;
-  }
-  .recipe-search-bar {
-    justify-content: left;
-    gap: 1px;
-    margin-left: 50px;
-  }
-  .recipesubscribe {
-    justify-content: left;
-    gap: 20px;
-    padding: 1rem;
-    text-align: left;
-    color: white;
-    background-color: #000;
-  }
-  
-  .recipesubscribe input {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-right: 0.5rem;
-  }
-  
-  .recipesubscribe button {
-    padding: 0.5rem;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-  }
-
-  .category button {
-    justify-content: center;
-    padding: 0.5rem;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-  }
-  .category-img {
-      width: 40px; /* Ensures the image scales with its container */
-      height: auto; /* Maintains the aspect ratio */
-      object-fit: cover; /* Ensures the image fills its container while keeping the aspect ratio */
-      border-radius: 10px; /* Optional: adds rounded corners */
-  }
-  .recipe-search-bar {
-    display: inline-block; /* Ensures the search bar stays inline */
-    vertical-align: middle;
-    margin-right: 20px; /* Adds spacing between the search bar and the category buttons */
+  margin-bottom: 1rem;
 }
 
-.recipe-search-bar input {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
+.searchblock {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background-color: #000;
 }
 
-.recipe-search-bar button {
-    padding: 8px;
-    font-size: 16px;
-    background-color: #333;
-    border-radius: 4px;
-    cursor: pointer;
+.recipesearchblock {
+  display: flex;
+  justify-content: center;
+  /* Centers the block horizontally */
+  align-items: center;
+  /* Centers the content vertically */
+  text-align: left;
+  /* Ensures text aligns to the left */
+  padding: 20px;
+  /* Adds spacing around the block */
+  gap: 50px;
+  padding: 1rem;
+  color: white;
+  background-color: #000;
 }
 
-.category {
-    display: inline-block; /* Keeps the category section inline with the search bar */
-    vertical-align: middle; /* Aligns it with the search bar */
-    text-align: center;
+.recipe-search-bar {
+  justify-content: left;
+  gap: 1px;
+  margin-left: 50px;
+}
+
+.recipesubscribe {
+  justify-content: left;
+  gap: 20px;
+  padding: 1rem;
+  text-align: left;
+  color: white;
+  background-color: #000;
+}
+
+.recipesubscribe input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.recipesubscribe button {
+  padding: 0.5rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
 }
 
 .category button {
-    display: inline-block; /* Makes each button inline within the category section */
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin: 0 10px; /* Adds spacing between buttons */
-    text-align: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
 }
 
 .category-img {
-    width: 40px; /* Adjust size as needed */
-    height: 40px;
-    display: block;
-    margin: 0 auto; /* Centers the image in the button */
+  width: 40px;
+  /* Ensures the image scales with its container */
+  height: auto;
+  /* Maintains the aspect ratio */
+  object-fit: cover;
+  /* Ensures the image fills its container while keeping the aspect ratio */
+  border-radius: 10px;
+  /* Optional: adds rounded corners */
+}
+
+.recipe-search-bar {
+  display: inline-block;
+  /* Ensures the search bar stays inline */
+  vertical-align: middle;
+  margin-right: 20px;
+  /* Adds spacing between the search bar and the category buttons */
+}
+
+.recipe-search-bar input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.recipe-search-bar button {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.category {
+  display: inline-block;
+  /* Keeps the category section inline with the search bar */
+  vertical-align: middle;
+  /* Aligns it with the search bar */
+  text-align: center;
+}
+
+.category button {
+  display: inline-block;
+  /* Makes each button inline within the category section */
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0 10px;
+  /* Adds spacing between buttons */
+  text-align: center;
+}
+
+.category-img {
+  width: 40px;
+  /* Adjust size as needed */
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  /* Centers the image in the button */
 }
 
 .category button span {
-    display: block; /* Ensures text stays below the image */
-    font-size: 14px;
+  display: block;
+  /* Ensures text stays below the image */
+  font-size: 14px;
 }
-  
-
-  .about {
-    display: flex;
-    padding: 1rem;
-    background-color: #f8f8f8;
-  }
-  
-  .about-image {
-    flex: 0;
-    height: 200px;
-    margin-left: 20%;
-    border-radius: 10px;
-  }
-  
-  .about-text {
-    flex: 2;
-  }
-  .about-page-text {
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .more-about-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #000;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none; /* Remove underline */
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 10px;
-  }
-  
-  .more-about-btn:hover {
-    background-color: var(--nav-hover-background-color);
-      color: var(--headline-color-on-color);
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #000;
-    color: white;
-  }
-  
-  .footer a {
-    margin: 0 0.5rem;
-    text-decoration: none;
-    color: white;
-    
-  }
-
-  .social-media {
-
-  }
-  
-  .social-link {
-    font-size: 20px; /* Size of the icons */
-    color: #000; /* Default color */
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .social-link:hover {
-    background-color: var(--nav-hover-background-color);
-      color: var(--headline-color-on-color);
-  }
-
-  .easy-meal-prep {
-    margin: 40px 0;
-    text-align: center;
-  }
-  
-  .easy-meal-prep .images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  .what-is-meal-prep,
-  .meal-prep-tips {
-    margin: 40px 0;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 5px;
-  }
 
 
-  .downloads {
-    text-align: center;
-  }
-  
-  .download-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-  }
-  
-  .download-boxes .box {
-    text-align: center;
-  }
+.about {
+  display: flex;
+  padding: 1rem;
+  background-color: #f8f8f8;
+}
 
-  #meal-planning-tips ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  #meal-planning-tips li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-  }
-  
-  .download-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #000;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none; /* Remove underline */
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .download-button:hover {
-    background-color: #000;
-  }
+.about-image {         /* Ensure the image is responsive */
+  max-width: 250px;      /* Set a maximum width to control image size */
+  height: auto;       
+  margin-top: 20px;   /* Keep the aspect ratio of the image */
+  margin-bottom: 20px;
+  margin-left: 20%;
+  border-radius: 10px;
+}
 
-  #what-is-meal-prep {
-    margin: 40px 0;
-    padding: 20px;;
-    border-radius: 5px;
-    background-color: white;
-  }
-  
-  #what-is-meal-prep h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-  }
-  
-  #what-is-meal-prep h3 {
-    font-size: 1.4rem;
-    margin-top: 20px;
-  }
-  
-  #what-is-meal-prep ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  #what-is-meal-prep ul li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-  }
-  
-  #what-is-meal-prep p {
-    line-height: 1.8;
-    margin-bottom: 15px;
-  }
-  .meal-prep-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.about-text {
+  flex: 2;     /* Set a maximum width to control image size */
+  height: auto;       
+  margin-top: 20px;   /* Keep the aspect ratio of the image */
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.about-page-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.more-about-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  /* Remove underline */
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.more-about-btn:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--headline-color-on-color);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+  color: white;
+}
+
+.footer a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: white;
+
+}
+
+.social-media {}
+
+.social-link {
+  font-size: 20px;
+  /* Size of the icons */
+  color: #000;
+  /* Default color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--headline-color-on-color);
+}
+
+.easy-meal-prep {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.easy-meal-prep .images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.what-is-meal-prep,
+.meal-prep-tips {
+  margin: 40px 0;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+
+.downloads {
+  text-align: center;
+}
+
+.download-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.download-boxes .box {
+  text-align: center;
+}
+
+#meal-planning-tips ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#meal-planning-tips li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.download-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  /* Remove underline */
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #000;
+}
+
+#what-is-meal-prep {
+  margin: 40px 0;
+  padding: 20px;
+  ;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#what-is-meal-prep h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+#what-is-meal-prep h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+#what-is-meal-prep ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#what-is-meal-prep ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+#what-is-meal-prep p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.meal-prep-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .meal-prep-grid .image-box {
@@ -579,25 +771,29 @@ a:focus, button:focus {
 
 
 
-  @media (max-width: 768px) {
-    .recipes {
-      flex-direction: column;
-      align-items: center;
-    }
-    .recipe-card {
-      width: 80%; /* Adjust width for smaller screens */
-      margin-bottom: 1rem;
-    }
-    .content {
-        flex-direction: column;
-    }
-
-    .recipe-grid {
-        grid-template-columns: 1fr; /* Single column on small screens */
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 1rem;
-    }
+@media (max-width: 768px) {
+  .recipes {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .recipe-card {
+    width: 80%;
+    /* Adjust width for smaller screens */
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .recipe-grid {
+    grid-template-columns: 1fr;
+    /* Single column on small screens */
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

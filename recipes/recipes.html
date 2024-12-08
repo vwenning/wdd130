@@ -7,6 +7,9 @@
     <title>Recipes</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 
 <body>
@@ -49,7 +52,7 @@
         </form>
     </section>
     <!-- Introduction Section -->
-    <section class="intro">
+    <section class="recipe-intro">
         <h1>Welcome to the recipe collection!</h1>
         <p>Explore Recipes That Fit Your Life<br> Here, you'll find a variety of dishes designed to make
             meal planning a breeze. <br>Whether you're looking for quick weeknight dinners, healthy options,
@@ -58,12 +61,16 @@
     <!-- Main Section -->
     <main>
         <section class="recipes-overview">
-            <div class="searchblock">
-                <input type="text" placeholder="Find a recipe">
-                <button>🔍</button>
-            </div>
             <section class="recipes-section">
                 <h2>Recipe Index</h2>
+            </section>
+            <form>
+                <div class="recipe-search-bar">
+                    <input type="text" placeholder="Find a recipe">
+                    <button type="submit">🔍</button>
+                </div>
+            </form>
+            <section class="recipes-section">
                 <div class="content">
                     <div class="recipe-grid">
                         <div class="recipe-card">
@@ -164,23 +171,31 @@
                         </div>
                     </div>
                     <aside class="sidebar">
-                        <div class="about">
-                            <h3>Hello, I’m Victoria!</h3>
-                            <p>
-                                Join me on a culinary journey as we take fresh, simple ingredients and turn them
-                                into refined, elegant dishes.
-                            </p>
-                            <a href="about.html" class="more-about-btn">More about Victoria</a>
-                        </div>
-                        <div class="subscribe-box">
-                            <p>Get the latest recipes to your inbox:</p>
-                            <form>
-                                <input type="email" placeholder="email address">
-                                <button type="submit">Sign up</button>
-                            </form>
+                        <div class="sidebar-container">
+                            <section class="sidebar-about">
+                                <div class="sidebar-about-image">
+                                    <img src="images/Chef.jpg" alt="Chef Victoria" class="about-image">
+                                </div>
+                                <div class="sidebar-about-text">
+                                    <h3>Hello, I'm Victoria!</h3>
+                                    <p>
+                                        Join me on a culinary journey as we take fresh,
+                                        simple ingredients and turn them into refined,
+                                        elegant dishes that any home cook can master.
+                                    </p>
+                                    <a href="about.html" class="more-about-btn">More about Victoria</a>
+                                </div>
+                            </section>
+
+                            <div class="sidebar-subscribe">
+                                <p>Get the latest recipes to your inbox:</p>
+                                <form>
+                                    <input type="email" placeholder="email address">
+                                    <button type="submit">Sign up</button>
+                                </form>
+                            </div>
                         </div>
                     </aside>
-
             </section>
     </main>
 
