@@ -295,6 +295,7 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  margin-bottom: 60px;
 }
 
 .recipe-grid {
@@ -447,6 +448,7 @@ header {
   justify-content: left;
   gap: 1px;
   margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .recipe-subscribe {
