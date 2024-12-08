@@ -405,14 +405,9 @@ header {
 }
 
 
-
-
-
-
-
 .about,
 .subscribe-box {
-  background-color: #white;
+  background-color: white;
   padding: 1rem;
   border-radius: 5px;
   text-align: center;
@@ -422,7 +417,7 @@ header {
   margin-bottom: 1rem;
 }
 
-.searchblock {
+.search-block {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -432,7 +427,7 @@ header {
   background-color: #000;
 }
 
-.recipesearchblock {
+.recipe-search-block {
   display: flex;
   justify-content: center;
   /* Centers the block horizontally */
@@ -454,7 +449,7 @@ header {
   margin-left: 50px;
 }
 
-.recipesubscribe {
+.recipe-subscribe {
   justify-content: left;
   gap: 20px;
   padding: 1rem;
@@ -463,14 +458,14 @@ header {
   background-color: #000;
 }
 
-.recipesubscribe input {
+.recipe-subscribe input {
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-right: 0.5rem;
 }
 
-.recipesubscribe button {
+.recipe-subscribe button {
   padding: 0.5rem;
   border: none;
   background-color: #333;
@@ -619,7 +614,6 @@ header {
 
 }
 
-.social-media {}
 
 .social-link {
   font-size: 20px;
