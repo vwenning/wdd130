@@ -10,26 +10,6 @@ html {
   /* Adjust base font size for all elements */
 }
 
-<uniquifier>: body-font;
-<weight>: 400;
-
-.roboto-condensed-<uniquifier> {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-<uniquifier>: header-font;
-<weight>: 500;
-
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 
 :root {
   /* change the values below to your colors from your palette */
