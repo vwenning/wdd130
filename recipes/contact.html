@@ -50,98 +50,103 @@
                 <button type="submit">Sign up</button>
             </form>
         </section>
-        <!-- Introduction Section -->
-        <section class="intro">
-            <h1>We’d Love to Hear from You!</h1>
-            <p>Got a question, suggestion, or just want to say hello? Feel free to reach out.
+        <div class="contact">
+            <!-- Introduction Section -->
+            <div class="contact-intro">
+                <h1>We’d Love to Hear from You!</h1>
+                <p>Got a question, suggestion, or just want to say hello? Feel free to reach out.
+                    <br>
+                <div class="left-align">
+                    🌟 Email: victoria@recipes.com
+                    <br>
+                    📋 Social Media: Follow us on Instagram, Pinterest, and Facebook.
+                </div>
                 <br>
-            <div class="left-align">
-                🌟 Email: victoria@recipes.com
-                <br>
-                📋 Social Media: Follow us on Instagram, Pinterest, and Facebook.
-            </div>
-            <br>
-            Whether you have a recipe request, want to collaborate,
-            <br>or just need cooking advice, I’m here to help.
-            <br>Let’s connect!
-            </p>
-        </section>
-        <section id="contact-form">
-            <h2>Send Us a Message</h2>
-            <div id="feedback">
-                <form action="/my-handling-form-page" method="post">
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" />
-                    </p>
-                    <p>
-                        <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </p>
-                    <p>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </p>
-                    <p class="button">
-                        <button type="submit">Send your message</button>
-                    </p>
-                </form>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <!-- *********Still needs work********* -->
-        <section class="about">
-            <!-- *********Curve corners********* -->
-            <div class="about-image"><img src="images/Chef.jpg" alt="Chef Victoria" class="about-image"></div>
-            <div class="about-text">
-
-                <h2>Hello, I'm Victoria!</h2>
-                <p>
-                    Join me on a culinary journey as we take fresh, simple ingredients and turn them into refined,
-                    elegant
-                    dishes that any home cook can master.
+                Whether you have a recipe request, want to collaborate,
+                <br>or just need cooking advice, I’m here to help.
+                <br>Let’s connect!
                 </p>
-                <!-- Make the button a link -->
-                <a href="about.html" class="more-about-btn">More about Victoria</a>
-
             </div>
-        </section>
-
-        <!-- Footer -->
-        <!-- *********Still needs work********* add the stuff from wwr-->
-        <footer class="footer">
-            <div class="footer-links">
-                <div class="social-media">
-                    <a href="https://instagram.com" target="_blank" class="social-link"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://facebook.com" target="_blank" class="social-link"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="site-plan.html" target="_blank" class="social-link"><i class="fa-solid fa-sitemap"></i></a>
+            <section id="contact-form">
+                <h2>Send Us a Message</h2>
+                <div id="feedback">
+                    <form action="/my-handling-form-page" method="post">
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </p>
+                        <p>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </p>
+                        <p>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </p>
+                        <p class="button">
+                            <button type="submit">Send your message</button>
+                        </p>
+                    </form>
                 </div>
-                <div class="site-plan">
+            </section>
+
+            <!-- About Section -->
+            <!-- *********Still needs work********* -->
+            <section class="about">
+                <!-- *********Curve corners********* -->
+                <div class="about-about-image"><img src="images/Chef.jpg" alt="Chef Victoria" class="about-image"></div>
+                <div class="contact-about-text">
+
+                    <h2>Hello, I'm Victoria!</h2>
+                    <p>
+                        Join me on a culinary journey as we take fresh, simple ingredients and turn them into refined,
+                        elegant
+                        dishes that any home cook can master.
+                    </p>
+                    <!-- Make the button a link -->
+                    <a href="about.html" class="more-about-btn">More about Victoria</a>
 
                 </div>
-            </div>
-        </footer>
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form so we can read what was entered in it.
-            const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function (e) {
-                // stop the form from doing the default action.
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-            });
-        </script>
-        </body>
+            </section>
+        </div>
 
-        </html>
+            <footer class="footer">
+                <div class="footer-links">
+                    <div class="social-media">
+                        <a href="https://instagram.com" target="_blank" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="social-link"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="social-link"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="site-plan.html" target="_blank" class="social-link"><i
+                                class="fa-solid fa-sitemap"></i></a>
+                    </div>
+                    <div class="site-plan">
+                    </div>
+                </div>
+                <p>Victoria's Recipes &copy; 2024 - Victoria Wenning</p>
+            </footer>
+            </body>
+
+            </html>
+            <script>
+                // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('feedback');
+                // get the form so we can read what was entered in it.
+                const formElement = document.forms[0];
+                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function (e) {
+                    // stop the form from doing the default action.
+                    e.preventDefault();
+                    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                    feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+                    // make the feedback element visible.
+                    feedbackElement.style.display = "block";
+                    // add a class to move everything down so our message doesn't cover it.
+                    document.body.classList.toggle('moveDown');
+                });
+            </script>
+            </body>
+
+            </html>

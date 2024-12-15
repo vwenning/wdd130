@@ -603,10 +603,6 @@ header {
   border-radius: 10px;
 }
 
-.about-page-text {
-  text-align: center;
-  padding: 10px;
-}
 
 .more-about-btn {
   padding: 0.5rem 1rem;
@@ -834,8 +830,59 @@ header {
 
 
 
+/* About Page */
+.about {
+  justify-content: center;
+}
+
+.about-grid {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* Two columns */
+  gap: 1rem;
+  flex: 1;
+}
+.about-about-image {
+  padding-left: 100px;
+  padding-right: 300px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-page-text {
+  text-align: center;
+  padding: 30px;
+}
 
 
+/* Contact Page */
+.contact {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+
+}
+.contact-intro {
+  max-width: 80%;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-intro text {
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-about-text {
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  justify-content: center;
+  max-width: 20%;
+  flex: 2;
+}
 
 
 
